@@ -1,0 +1,8 @@
+most happiest hour: 2021-12-31,13 sentiment scores: 3658.952143925732 amoung 7991 hours
+most happiest day: 2021-12-31 sentiment scores: 30402.262571419607 amoung 340 days
+most active hour: 2022-05-21,12 tweets num: 39061 amoung 7991 hours
+most active day: 2022-05-21 tweets num: 424372 amoung 340 days
+
+real	42m5.190s
+user	0m0.010s
+sys	0m0.006s
