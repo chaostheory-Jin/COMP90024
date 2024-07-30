@@ -1,0 +1,25 @@
+include:
+- ./fission/functions/analysis/ianalysis.zip
+kind: ArchiveUploadSpec
+name: functions-ianalysis-zip-m5uI
+
+---
+apiVersion: fission.io/v1
+kind: Package
+metadata:
+  creationTimestamp: null
+  name: ianalysis
+spec:
+  buildcmd: ./build.sh
+  deployment:
+    checksum: {}
+  environment:
+    name: python
+    namespace: ""
+  source:
+    checksum: {}
+    type: url
+    url: archive://functions-ianalysis-zip-m5uI
+status:
+  buildstatus: pending
+  lastUpdateTimestamp: "2024-05-18T08:24:45Z"

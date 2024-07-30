@@ -1,0 +1,25 @@
+include:
+- ./fission/functions/analysis/ganalysis.zip
+kind: ArchiveUploadSpec
+name: functions-ganalysis-zip-WNRD
+
+---
+apiVersion: fission.io/v1
+kind: Package
+metadata:
+  creationTimestamp: null
+  name: ganalysis
+spec:
+  buildcmd: ./build.sh
+  deployment:
+    checksum: {}
+  environment:
+    name: python
+    namespace: ""
+  source:
+    checksum: {}
+    type: url
+    url: archive://functions-ganalysis-zip-WNRD
+status:
+  buildstatus: pending
+  lastUpdateTimestamp: "2024-05-19T07:37:49Z"

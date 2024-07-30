@@ -1,0 +1,25 @@
+include:
+- ./fission/functions/analysis/panalysis.zip
+kind: ArchiveUploadSpec
+name: functions-panalysis-zip-jW0I
+
+---
+apiVersion: fission.io/v1
+kind: Package
+metadata:
+  creationTimestamp: null
+  name: panalysis
+spec:
+  buildcmd: ./build.sh
+  deployment:
+    checksum: {}
+  environment:
+    name: python
+    namespace: ""
+  source:
+    checksum: {}
+    type: url
+    url: archive://functions-panalysis-zip-jW0I
+status:
+  buildstatus: pending
+  lastUpdateTimestamp: "2024-05-16T15:54:29Z"
